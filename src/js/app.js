@@ -25,9 +25,7 @@ App = {
   },
 
   initContract: function () {
-    //App.contracts.Ballot = new App.web3.eth.Contract(App.abi, App.address, {});
     App.contracts.EducationPlatform = new App.web3.eth.Contract(App.abiEdu, App.addressEdu, {});
-    //App.contracts.EduToken = new App.web3.eth.Contract(App.abiEduToken, App.addressEduToken, {});
     return App.bindEvents();
   },
 
